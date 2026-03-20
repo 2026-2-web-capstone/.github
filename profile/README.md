@@ -9,7 +9,7 @@ web-capstone/
 ├── Backend/     # Spring Boot REST API 서버
 ├── web/         # React 웹 프론트엔드 (Vite + Tailwind)
 ├── android/     # React Native/Expo 모바일 앱 (API 연동)
-└── mobile/      # React Native/Expo 모바일 앱 (Mock 데이터)
+└── mobile/      # React Native/Expo 모바일 앱 (API 연동)
 ```
 
 ## 기술 스택
@@ -43,7 +43,7 @@ web-capstone/
 | React Native | 0.81.5 |
 | Expo | ~54 |
 | React Navigation | Bottom Tabs + Native Stack |
-| axios | API 통신 (android만) |
+| axios | API 통신 |
 | react-hook-form | 폼 관리 |
 | lucide-react-native | 아이콘 |
 
@@ -64,7 +64,7 @@ web-capstone/
 
 ## API 엔드포인트
 
-Base URL: `/api/v1`
+Base URL: `https://booksstore.o-r.kr`
 
 | 도메인 | 엔드포인트 | 설명 |
 |--------|-----------|------|
@@ -116,7 +116,7 @@ mysql -u root -p
 ./gradlew bootRun
 ```
 
-Swagger UI: http://localhost:8080/swagger-ui.html
+Swagger UI: https://booksstore.o-r.kr/swagger-ui/index.html
 
 ### Web
 
@@ -138,7 +138,7 @@ npx expo start
 
 에뮬레이터에서 `a` 키로 실행
 
-### Mobile (Mock 데이터)
+### Mobile (API 연동)
 
 ```bash
 cd mobile
