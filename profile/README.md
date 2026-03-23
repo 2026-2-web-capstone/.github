@@ -261,9 +261,9 @@ Base URL: `/api/v1`
 
 ## 🎥 시연 영상
 
-- [웹 시연영상]
-- [Android 시연영상]
-- [iOS 시연영상]
+- [웹 시연영상](https://youtu.be/WWsBcoMzGnw)
+- [Android 시연영상](https://youtu.be/2Y3XVmpbMD0)
+- [iOS 시연영상](https://www.youtube.com/watch?v=taRLrG_HhLY)
 
 ## 📊 작년 우수팀 비교표
 
