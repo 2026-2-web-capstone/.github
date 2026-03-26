@@ -9,20 +9,19 @@
 
 </div>
 
-## 📚 목차
-- 홈페이지: https://web-tau-ten-59.vercel.app/
-- [프로젝트 소개](#-프로젝트-소개)
-- [기술 스택](#-기술-스택)
-- [시스템 아키텍처](#-시스템-아키텍처)
-- [기능 구성도](#-기능-구성도)
-- [API 명세서](#-api-명세서)
-- [코드 저장소](#-코드-저장소)
-- [App 설치](#-app-설치)
-- [시연 영상](#-시연-영상)
-- [작년 우수팀 비교표](#-작년-우수팀-비교표)
-- [팀원 소개](#-팀원-소개)
+## 📖 목차
 
-## 🛒 프로젝트 소개
+- [🎯 프로젝트 소개](#-프로젝트-소개)
+- [🏠 홈페이지](#-홈페이지)
+- [📌 기능 구성도](#-기능-구성도)
+- [📌 API 명세서](#-api-명세서)
+- [💻 코드](#-코드)
+- [📱 App 설치](#-app-설치)
+- [🎬 시연 동영상](#-시연-동영상)
+- [🏆 작년 우수팀과의 비교표](#-작년-우수팀과의-비교표)
+- [👥 팀원 소개](#-팀원-소개)
+
+## 🎯 프로젝트 소개
 
 온라인 도서 쇼핑몰로, 사용자에게 편리한 도서 검색 및 구매 경험을 제공하고 관리자에게는 효율적인 도서 관리 도구를 제공합니다.
 
@@ -32,91 +31,16 @@
 - 도서 리뷰 작성 및 조회
 - JWT 기반 사용자 인증 (회원가입/로그인/로그아웃)
 - 관리자 도서 등록/삭제 및 이미지 관리 (AWS S3)
-- Prometheus + Grafana 기반 서버 모니터링
+- **Android, iOS, 데스크탑** 모두에서 사용 가능 – 크로스플랫폼 지원
 
-## 🛠 기술 스택
+## 🏠 홈페이지
 
-<details>
-<summary>기술 스택 (클릭하면 내용 보입니다)</summary>
+https://web-tau-ten-59.vercel.app/
 
-### Backend
-<img src="https://img.shields.io/badge/Java 21-007396?style=flat&logo=java&logoColor=white"/>
-<img src="https://img.shields.io/badge/Spring Boot 3.2.5-6DB33F?style=flat&logo=springboot&logoColor=white"/>
-<img src="https://img.shields.io/badge/Spring Security-6DB33F?style=flat&logo=springsecurity&logoColor=white"/>
-<img src="https://img.shields.io/badge/Spring Data JPA-6DB33F?style=flat&logo=spring&logoColor=white"/>
-<img src="https://img.shields.io/badge/JWT-000000?style=flat&logo=jsonwebtokens&logoColor=white"/>
-<img src="https://img.shields.io/badge/Flyway-CC0200?style=flat&logo=flyway&logoColor=white"/>
-<img src="https://img.shields.io/badge/Swagger-85EA2D?style=flat&logo=swagger&logoColor=black"/>
-
-### Database & Storage
-<img src="https://img.shields.io/badge/MySQL 8.0-4479A1?style=flat&logo=mysql&logoColor=white"/>
-<img src="https://img.shields.io/badge/AWS S3-569A31?style=flat&logo=amazons3&logoColor=white"/>
-
-### Web Frontend
-<img src="https://img.shields.io/badge/React 18-61DAFB?style=flat&logo=react&logoColor=black"/>
-<img src="https://img.shields.io/badge/Vite 5-646CFF?style=flat&logo=vite&logoColor=white"/>
-<img src="https://img.shields.io/badge/Tailwind CSS-06B6D4?style=flat&logo=tailwindcss&logoColor=white"/>
-<img src="https://img.shields.io/badge/React Router 6-CA4245?style=flat&logo=reactrouter&logoColor=white"/>
-
-### Mobile App
-<img src="https://img.shields.io/badge/React Native 0.81-61DAFB?style=flat&logo=react&logoColor=black"/>
-<img src="https://img.shields.io/badge/Expo 54-000020?style=flat&logo=expo&logoColor=white"/>
-<img src="https://img.shields.io/badge/React Navigation-6b52ae?style=flat&logo=react&logoColor=white"/>
-<img src="https://img.shields.io/badge/Axios-5A29E4?style=flat&logo=axios&logoColor=white"/>
-
-### DevOps & Monitoring
-<img src="https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white"/>
-<img src="https://img.shields.io/badge/GitHub Actions-2088FF?style=flat&logo=githubactions&logoColor=white"/>
-<img src="https://img.shields.io/badge/Prometheus-E6522C?style=flat&logo=prometheus&logoColor=white"/>
-<img src="https://img.shields.io/badge/Grafana-F46800?style=flat&logo=grafana&logoColor=white"/>
-
-</details>
-
-## 🏗 시스템 아키텍처
-
-<!-- 시스템 아키텍처 이미지가 있으면 아래 주석을 해제하고 URL을 교체하세요 -->
-<!-- <img src="https://github.com/user-attachments/assets/YOUR_IMAGE_ID" width="800"> -->
-
-```
-┌──────────────────────────────────────────────────────────────┐
-│                        Client Layer                          │
-│  ┌──────────┐    ┌──────────────┐    ┌────────────────────┐  │
-│  │ Web (React│    │ Android (Expo│    │ iOS (Expo)         │  │
-│  │ + Vite)  │    │ + Axios)     │    │                    │  │
-│  └─────┬────┘    └──────┬───────┘    └────────┬───────────┘  │
-│        │                │                     │              │
-└────────┼────────────────┼─────────────────────┼──────────────┘
-         │   HTTPS/REST   │                     │
-         ▼                ▼                     ▼
-┌──────────────────────────────────────────────────────────────┐
-│                     Server Layer (Docker)                     │
-│  ┌──────────────────────────────────────────────────────┐    │
-│  │            Spring Boot API (Port 8080)                │    │
-│  │  ┌──────────┐ ┌──────────┐ ┌───────────────────────┐ │    │
-│  │  │ Security │ │ REST API │ │ Swagger UI            │ │    │
-│  │  │ (JWT)    │ │Controller│ │ /swagger-ui.html      │ │    │
-│  │  └──────────┘ └──────────┘ └───────────────────────┘ │    │
-│  │  ┌──────────┐ ┌──────────┐ ┌───────────────────────┐ │    │
-│  │  │ JPA      │ │ Flyway   │ │ Actuator + Micrometer │ │    │
-│  │  └────┬─────┘ └──────────┘ └───────────┬───────────┘ │    │
-│  └───────┼────────────────────────────────┼─────────────┘    │
-│          │                                │                  │
-│  ┌───────▼───────┐  ┌────────┐  ┌────────▼──────┐           │
-│  │  MySQL 8.0    │  │ AWS S3 │  │  Prometheus   │           │
-│  │  (Port 3306)  │  │ Images │  │  (Port 9090)  │           │
-│  └───────────────┘  └────────┘  └───────┬───────┘           │
-│                                         │                    │
-│                                 ┌───────▼───────┐           │
-│                                 │   Grafana      │           │
-│                                 │  (Port 3000)   │           │
-│                                 └───────────────┘           │
-└──────────────────────────────────────────────────────────────┘
-```
-
-## 💡 기능 구성도
+## 📌 기능 구성도
 
 <details>
-<summary>기능 구성도 (클릭하면 내용 보입니다)</summary>
+<summary>기능 구성도 보기</summary>
 
 ```
 도서 쇼핑몰
@@ -163,10 +87,10 @@
 
 </details>
 
-## 📋 API 명세서
+## 📌 API 명세서
 
 <details>
-<summary>전체 API 명세 보기 (클릭하면 내용 보입니다)</summary>
+<summary>API 명세서 보기</summary>
 
 Base URL: `/api/v1`
 
@@ -247,38 +171,38 @@ Base URL: `/api/v1`
 
 </details>
 
-## 📁 코드 저장소
+## 💻 코드
 
-- [Spring Backend](https://github.com/2026-2-web-capstone/Backend)
-- [React Web Frontend](https://github.com/2026-2-web-capstone/web)
-- [Android App](https://github.com/2026-2-web-capstone/android)
-- [iOS App](https://github.com/2026-2-web-capstone/mobile)
+[🔗 백엔드](https://github.com/2026-2-web-capstone/Backend)
+[🔗 리액트](https://github.com/2026-2-web-capstone/web)
+[🔗 안드로이드](https://github.com/2026-2-web-capstone/android)
+[🔗 아이폰](https://github.com/2026-2-web-capstone/mobile)
 
-## 📲 App 설치
+## 📱 App 설치
 
-- [AppStore]
-- [GooglePlay]
+[🔗 안드로이드]
+[🔗 아이폰]
 
-## 🎥 시연 영상
+## 🎬 시연 동영상
 
 - [웹 시연영상](https://youtu.be/WWsBcoMzGnw)
 - [Android 시연영상](https://youtu.be/2Y3XVmpbMD0)
 - [iOS 시연영상](https://www.youtube.com/watch?v=taRLrG_HhLY)
 
-## 📊 작년 우수팀 비교표
+## 🏆 작년 우수팀과의 비교표
 
-|  | BookStore | 최우수 | 우수1 | 우수2 | 우수3 |
-|------|--------|---------|---------|---------|---------|
+| 항목 | BookStore | 최우수 | 우수1 | 우수2 | 우수3 |
+|------|-----------|--------|-------|-------|-------|
 | Code | ✅ | ✅ | ✅ | ✅ | ✅ |
 | Doc | ✅ | ✅ | ✅ | ❌ | ✅ |
-| 영상 | ✅ | ✅ | ❌ | ❌ | ❌ |
-| 화면 | W,A,I | R | R | R | R |
+| 영상 | ✅ | ✅ | ✅ | ❌ | ✅ |
+| 화면 | W, A, I | R | R | R | R |
 | AppStore/GooglePlay | ✅ | ❌ | ❌ | ❌ | ❌ |
 
-최우수 : https://github.com/capstone-aloha</br>
-우수1 : https://github.com/TeamCookCaps</br>
-우수2 : https://github.com/godi00/capstone</br>
-우수3 : https://github.com/Capic2024/server-flask
+최우수 : 황치즈 https://github.com/HwangCheese/VideoSummary<br>
+우수1 : 황금토끼 https://github.com/GolddBunny/Domain_QA_Gen<br>
+우수2 : 초신성 https://github.com/kola0709/2025Capstone/tree/master (작품설명 없음)<br>
+우수3 : Prism https://github.com/hsu-capstone-prism/DamSeol
 
 ## 👥 팀원 소개
 
