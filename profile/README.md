@@ -185,7 +185,8 @@ Base URL: `/api/v1`
 
 ## 🎬 시연 동영상
 
-- [웹 시연영상](https://youtu.be/WWsBcoMzGnw)
+- [리액트(PC) 시연 영상](https://youtu.be/WWsBcoMzGnw)
+- [리액트(모바일) 시연 영상]()
 - [Android 시연영상](https://youtu.be/2Y3XVmpbMD0)
 - [iOS 시연영상](https://www.youtube.com/watch?v=taRLrG_HhLY)
 
