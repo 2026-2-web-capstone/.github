@@ -181,14 +181,14 @@ Base URL: `/api/v1`
 ## 📱 App 설치
 
 [🔗 안드로이드]
-[🔗 아이폰]
+[[🔗 아이폰](https://testflight.apple.com/join/T15w35Pe)]
 
 ## 🎬 시연 동영상
 
 - [리액트(PC) 시연 영상](https://youtu.be/tdA5p82Bdbk)
 - [리액트(모바일) 시연 영상](https://youtu.be/HaC7KlDspks)
 - [Android 시연영상](https://youtu.be/2Y3XVmpbMD0)
-- [iOS 시연영상](https://www.youtube.com/watch?v=taRLrG_HhLY)
+- [iOS 시연영상](https://youtube.com/shorts/DwBnLXyKG1Q?feature=share)
 
 ## 🏆 작년 우수팀과의 비교표
 
