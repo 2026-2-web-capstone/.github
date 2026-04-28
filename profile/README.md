@@ -40,7 +40,7 @@ https://web-tau-ten-59.vercel.app/
 ## 📌 기능 구성도
 
 <details>
-<summary>기능 구성도 보기</summary>
+<summary>기능 구성도 (클릭하면 내용 보입니다)</summary>
 
 ```
 도서 쇼핑몰
@@ -90,7 +90,7 @@ https://web-tau-ten-59.vercel.app/
 ## 📌 API 명세서
 
 <details>
-<summary>API 명세서 보기</summary>
+<summary>전체 API 명세서 보기(클릭하면 내용 보입니다)</summary>
 
 Base URL: `/api/v1`
 
