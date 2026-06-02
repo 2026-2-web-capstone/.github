@@ -180,7 +180,7 @@ Base URL: `/api/v1`
 
 ## 📱 App 설치
 
-[🔗 안드로이드]
+[🔗 안드로이드](https://play.google.com/store/apps/details?id=com.webcapstone.bookstore)
 [[🔗 아이폰](https://testflight.apple.com/join/T15w35Pe)]
 
 ## 🎬 시연 동영상
