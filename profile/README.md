@@ -214,6 +214,7 @@ Base URL: `/api/v1`
 | 웹 프론트엔드 | 박세웅 | https://github.com/hardwoong |
 | Android | 윤예진 | https://github.com/nyun-nye |
 | iOS | 구혁모 | https://github.com/9hkmo |
+<img width="1920" height="1440" alt="image" src="https://github.com/user-attachments/assets/478bccb4-c057-44c6-89aa-b61b4e1b9c8d" />
 
 <div align="center">
 Copyright © 2026 BookStore. All rights reserved.
